@@ -6,13 +6,13 @@ module.exports = {
   },
   extends: [
     "plugin:@typescript-eslint/recommended",
-    "plugin:@withfig/fig-linter/recommended",
+    "plugin:@tabsmith/fig-linter/recommended",
     "plugin:compat/recommended",
   ],
   env: {
     browser: true,
   },
-  plugins: ["@withfig/fig-linter"],
+  plugins: ["@tabsmith/fig-linter"],
   rules: {
     "@typescript-eslint/explicit-module-boundary-types": 0,
     "no-unused-vars": ["off"],

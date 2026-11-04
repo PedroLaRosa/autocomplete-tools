@@ -1,5 +1,5 @@
 const completionSpec: Fig.Spec = {
-  name: "@withfig/autocomplete-tools",
+  name: "@tabsmith/autocomplete-tools",
   description: "Dev tools for fig's autocomplete",
   icon: "https://fig.io/icons/fig-light.png",
   subcommands: [

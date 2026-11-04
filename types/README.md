@@ -1,4 +1,4 @@
-# @withfig/autocomplete-types package
+# @tabsmith/autocomplete-types package
 
 This is the package providing types for our autocomplete app.
 
@@ -11,7 +11,7 @@ Configure the global Fig namespace in your `tsconfig.json`:
   "compilerOptions": {
     // you may get some typecheck errors if you are using some node packages like "fs"
     // just include "node" in the below array. Same for "jest", "chai"...and so on.
-    "types": ["@withfig/autocomplete-types"]
+    "types": ["@tabsmith/autocomplete-types"]
   },
 }
 ```
@@ -24,7 +24,7 @@ You should try some of the following steps:
 2) Delete your `node_modules/` folder and reinstall again the packages
 3) Restart the system
 
-If you are still unable to use `@withfig/autocomplete-types`, please open an issue [here](https://github.com/withfig/autocomplete-tools/issues).
+If you are still unable to use `@tabsmith/autocomplete-types`, please open an issue [here](https://github.com/withfig/autocomplete-tools/issues).
 
 ## Documenting the API
 We use [TSDocs](https://tsdoc.org) to comment the exported symbols of the Fig namespace.

@@ -12,7 +12,7 @@
     "moduleResolution": "Bundler",
     "rootDir": "src",
     "outDir": "build",
-    "types": ["@withfig/autocomplete-types", "node"],
+    "types": ["@tabsmith/autocomplete-types", "node"],
     "declaration": true
   },
   "exclude": ["node_modules/", "generate-spec.ts", "test", "src/bin.ts"]

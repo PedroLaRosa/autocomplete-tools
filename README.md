@@ -9,61 +9,46 @@ This repo contains the source for all of Fig tools related with [autocomplete](h
 ## Packages
 
 - [`create-completion-spec`](cli/create-completion-spec/README.md)
-- [`@fig/publish-spec`](cli/publih-spec-to-team/README.md)
-- [`@withfig/autocomplete-tools`](cli/tools-cli/README.md)
-- [`@fig/eslint-config-autocomplete`](eslint/config-autocomplete/README.md)
-- [`@withfig/eslint-plugin-fig-linter`](eslint/plugin-fig-linter/README.md)
-- [`@fig/autocomplete-generators`](generators/README.md)
-- [`@fig/autocomplete-hooks`](hooks/README.md)
-- [`@fig/autocomplete-helpers`](helpers/README.md)
+- [`@tabsmith/publish-spec`](cli/publih-spec-to-team/README.md)
+- [`@tabsmith/autocomplete-tools`](cli/tools-cli/README.md)
+- [`@tabsmith/eslint-config-autocomplete`](eslint/config-autocomplete/README.md)
+- [`@tabsmith/eslint-plugin-fig-linter`](eslint/plugin-fig-linter/README.md)
+- [`@tabsmith/autocomplete-generators`](generators/README.md)
+- [`@tabsmith/autocomplete-hooks`](hooks/README.md)
+- [`@tabsmith/autocomplete-helpers`](helpers/README.md)
 - [`argparse_complete_fig`](integrations/argparse/README.md)
 - [`cement_complete_fig`](integrations/cement/README.md)
 - [`clap_complete_fig`](integrations/clap/README.md)
 - [`click_complete_fig`](integrations/click/README.md)
 - [`cobracompletefig`](integrations/cobra/README.md)
-- [`@fig/complete-commander`](integrations/commander/README.md)
-- [`@fig/complete-oclif`](integrations/oclif/README.md)
+- [`@tabsmith/complete-commander`](integrations/commander/README.md)
+- [`@tabsmith/complete-oclif`](integrations/oclif/README.md)
 - [`swift-argument-parser`](integrations/swift-argument-parser/README.md)
-- [`@fig/autocomplete-merge`](merge/README.md)
-- [`@fig/autocomplete-shared`](shared/README.md)
-- [`@withfig/autocomplete-types`](types/README.md)
+- [`@tabsmith/autocomplete-merge`](merge/README.md)
+- [`@tabsmith/autocomplete-shared`](shared/README.md)
+- [`@tabsmith/autocomplete-types`](types/README.md)
 
 ## To publish a package:
 
-1) Update the `package.json` `version` propery
+npm packages are published by CI. Bump `version` in the package's `package.json` and merge to `main`: the
+[Publish packages](.github/workflows/publish.yml) workflow runs `pnpm -r publish`, which publishes every
+workspace package whose current version is not on npm yet (it needs the `NPM_TOKEN` repo secret).
 
-2) Commit the updated `package.json` file to the origin repo
-
-3) Git tag the commit you have just made using the following format and push the tag to the origin repo
-  - The git tag should be: `<package_name>@<new_numerical_version>`
-  - Example: `git tag @fig/publish-spec@1.2.3`
-
-4) Run `pnpm publish ./<package>`
-
-> **IMPORTANT**: remember to tag the new package version following the current conventions (see the previous tags of a package)
-> this is important for some workflows we are running and to keep track of when releases were done.
-
-> **IMPORTANT**: all packages need to be git tagged, not only npm ones!
-
-e.g.
-```bash
-pnpm publish ./types
-```
-
-> Note: `<workspace name>` is not the name of the folder, but the name specified inside the package.json of the package to publish.
+Non-npm packages (Go, Python) are still released by git tag, following each package's previous tags
+(e.g. `packages/cobra/v1.2.0`, `argparse_complete_fig@1.0.1`).
 
 ## Conventions for new CLI integration
 
 ### Package (integration) name
 
-- If namespaced it SHOULD be `@fig/complete[-_]($FRAMEWORK_NAME)`
+- If namespaced it SHOULD be `@tabsmith/complete[-_]($FRAMEWORK_NAME)`
 - If not namespaced it SHOULD be `($FRAMEWORK_NAME)[-_]complete[-_]fig`
 
 According to language conventions you can use a dash or an underscore to separate the words.
 
 Examples:
-- `@fig/complete-commander`
-- `@fig/complete-oclif`
+- `@tabsmith/complete-commander`
+- `@tabsmith/complete-oclif`
 - `clap_complete_fig`
 - `cobracompletefig`
 

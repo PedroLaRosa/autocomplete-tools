@@ -17,9 +17,9 @@ module.exports = {
   },
   configs: {
     recommended: {
-      plugins: ["@withfig/fig-linter"],
+      plugins: ["@tabsmith/fig-linter"],
       rules: {
-        "@withfig/fig-linter/no-malicious-script": "error",
+        "@tabsmith/fig-linter/no-malicious-script": "error",
       },
       overrides: [
         {
@@ -27,10 +27,10 @@ module.exports = {
           // be sure to exclude it from diff-versioned-specs (see below)
           files: "src/**/*.ts",
           rules: {
-            "@withfig/fig-linter/no-useless-insertvalue": "error",
-            "@withfig/fig-linter/no-empty-array-values": "error",
-            "@withfig/fig-linter/no-name-equals": "error",
-            "@withfig/fig-linter/no-default-value-props": [
+            "@tabsmith/fig-linter/no-useless-insertvalue": "error",
+            "@tabsmith/fig-linter/no-empty-array-values": "error",
+            "@tabsmith/fig-linter/no-name-equals": "error",
+            "@tabsmith/fig-linter/no-default-value-props": [
               "error",
               [
                 { path: "options.[*].isRequired", defaultValue: false },
@@ -42,28 +42,28 @@ module.exports = {
               ],
             ],
             // TODO: Re-Enable Rule if we got a proper flag for that
-            "@withfig/fig-linter/no-invalid-option": "off",
-            "@withfig/fig-linter/no-invalid-name": "error",
-            "@withfig/fig-linter/no-duplicate-options-subcommands": "error",
-            "@withfig/fig-linter/no-missing-default-export": "error",
-            "@withfig/fig-linter/no-useless-arrays": "error",
-            "@withfig/fig-linter/conventional-descriptions": "error",
-            "@withfig/fig-linter/no-arg-in-option-name": "error",
+            "@tabsmith/fig-linter/no-invalid-option": "off",
+            "@tabsmith/fig-linter/no-invalid-name": "error",
+            "@tabsmith/fig-linter/no-duplicate-options-subcommands": "error",
+            "@tabsmith/fig-linter/no-missing-default-export": "error",
+            "@tabsmith/fig-linter/no-useless-arrays": "error",
+            "@tabsmith/fig-linter/conventional-descriptions": "error",
+            "@tabsmith/fig-linter/no-arg-in-option-name": "error",
           },
         },
         {
           // MARK: here we modify some rules for diff-versioned-specs indexes
           files: "src/**/index.ts",
           rules: {
-            "@withfig/fig-linter/no-missing-get-version-export": "warn",
+            "@tabsmith/fig-linter/no-missing-get-version-export": "warn",
           },
         },
         {
           // MARK: here we modify some rules from diff-versioned-specs versions
           files: "src/**/+([0-9]).+([0-9]).+([0-9]).ts",
           rules: {
-            "@withfig/fig-linter/no-missing-versions-export": "error",
-            "@withfig/fig-linter/no-default-value-props": "off", // disable this since diff-versioned specs may change isOptional to a default value
+            "@tabsmith/fig-linter/no-missing-versions-export": "error",
+            "@tabsmith/fig-linter/no-default-value-props": "off", // disable this since diff-versioned specs may change isOptional to a default value
           },
         },
       ],

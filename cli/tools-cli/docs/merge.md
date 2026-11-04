@@ -5,7 +5,7 @@ The merge tool is an handy tool that helps to merge an old version of a spec in 
 ## Usage
 
 ```sh
-npx @withfig/autocomplete-tools@latest merge <oldspec> <newspec> [-p, --presets <name>] [--ignore-command-props <props>] [--ignore-option-props <props>] [--ignore-arg-props <props>] 
+npx @tabsmith/autocomplete-tools@latest merge <oldspec> <newspec> [-p, --presets <name>] [--ignore-command-props <props>] [--ignore-option-props <props>] [--ignore-arg-props <props>] 
 ```
 
 ## How it works
@@ -19,7 +19,7 @@ We provide some presets to be used along with our [integrations](https://fig.io/
 For example if you regenerated a spec after an update to your CLI structure you can easily pass the `--preset <name>` option to the merge tool 
 and it will merge the two specs like magic keeping the options you customized in the old one but also adding, removing and updating everything new.
 ```
-npx @withfig/autocomplete-tools@latest merge old-spec.ts new-spec.ts --preset commander
+npx @tabsmith/autocomplete-tools@latest merge old-spec.ts new-spec.ts --preset commander
 ```
 > See a live example directly in this repo [package.json](https://github.com/withfig/autocomplete-tools/blob/262cc31134e95e50ee546c67d343ea6661e17592/packages/autocomplete-tools/package.json#L11).
 
@@ -62,6 +62,6 @@ const completionSpec: Fig.Spec = {
 
 So you will call the merge tool with the following options:
 ```sh
-npx @withfig/autocomplete-tools@latest merge <oldspec> <newspec> --ignore-command-props=name,description,subcommands
+npx @tabsmith/autocomplete-tools@latest merge <oldspec> <newspec> --ignore-command-props=name,description,subcommands
 ```
 > **NOTE**: we are explicitly adding `subcommands` prop to the command ignored props.

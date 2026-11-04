@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ["@fig/autocomplete"],
+  extends: ["@tabsmith/autocomplete"],
 };

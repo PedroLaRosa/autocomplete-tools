@@ -1,3 +1,3 @@
-# @fig/autocomplete-hooks package
+# @tabsmith/autocomplete-hooks package
 
 This package adds hooks to use in autocomplete components.

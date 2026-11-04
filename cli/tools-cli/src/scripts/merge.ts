@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import { Command, Option } from "commander";
-import { merge, presets, PresetName } from "@fig/autocomplete-merge";
+import { merge, presets, PresetName } from "@tabsmith/autocomplete-merge";
 
 async function runProgram(
   oldSpecPath: string,

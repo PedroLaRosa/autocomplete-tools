@@ -1,4 +1,4 @@
-import { createVersionedSpec } from "@fig/autocomplete-helpers";
+import { createVersionedSpec } from "@tabsmith/autocomplete-helpers";
 const versionFiles = ["1.0.0", "2.0.0"];
 export const getVersionCommand: Fig.GetVersionCommand = async (executeCommand) => {
   const { stdout } = await executeCommand({

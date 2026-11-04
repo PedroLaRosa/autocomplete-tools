@@ -17,7 +17,7 @@ export const validateName: Validator<NameValidation> = async (options: RunOption
       if (specPath) {
         // if name is missing we extract it from the optional spec-name
         // NOTE: this won't work correctly for spec names that require being nested under a subfolder
-        // e.g. `@withfig/autocomplete-tools.ts`
+        // e.g. `@tabsmith/autocomplete-tools.ts`
         name = path.basename(specPath, ".ts");
       } else {
         throw new ValidationError(GenericErrorEnum.missingName);

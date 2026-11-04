@@ -1,4 +1,4 @@
-import { createBoilerplateFolder } from "create-completion-spec";
+import { createBoilerplateFolder } from "@tabsmith/create-completion-spec";
 import { Command } from "commander";
 
 const program = new Command("init")

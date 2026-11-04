@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { Command } from "commander";
 import semver from "semver";
-import { applySpecDiff, diffSpecs } from "@fig/autocomplete-helpers";
+import { applySpecDiff, diffSpecs } from "@tabsmith/autocomplete-helpers";
 import { importFromStringSync } from "module-from-string";
 import prettier from "prettier";
 import ts from "typescript";
@@ -144,7 +144,7 @@ async function initVersionedSpec(specName: string, options: { cwd?: string }) {
     `${rootSpecPath}/index.ts`,
     await formatSource(
       [
-        `import { createVersionedSpec } from "@fig/autocomplete-helpers";\n`,
+        `import { createVersionedSpec } from "@tabsmith/autocomplete-helpers";\n`,
         `const versionFiles = [];\n`,
         `export default createVersionedSpec("${cleanedSpecName}", versionFiles);\n`,
       ].join("\n")

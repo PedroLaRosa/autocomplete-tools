@@ -1,0 +1,26 @@
+name: Publish packages
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: https://registry.npmjs.org
+      - uses: pnpm/action-setup@v4
+      - name: Install dependencies and build # build is a postinstall script
+        run: pnpm install --frozen-lockfile
+      - name: Test packages
+        run: pnpm test
+      # ponytail: pnpm skips versions already on npm, so bump a package.json version to release it
+      - name: Publish unpublished versions
+        run: pnpm -r publish --no-git-checks
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

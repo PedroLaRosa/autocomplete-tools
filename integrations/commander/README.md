@@ -25,7 +25,7 @@ Using this library is as simple as calling a function.
 The snippet of code below generates a new spec each time the executable file is run.
 ```js
 import { program } from 'commander'
-import { generateCompletionSpec } from '@fig/complete-commander'
+import { generateCompletionSpec } from '@tabsmith/complete-commander'
 
 program
   .name('babel')
@@ -44,7 +44,7 @@ You can also provide a custom command that generates a spec file when called. Fo
 
 ```js
 import { program } from 'commander'
-import { addCompletionSpecCommand } from '@fig/complete-commander'
+import { addCompletionSpecCommand } from '@tabsmith/complete-commander'
 
 program
   .name('eslint')

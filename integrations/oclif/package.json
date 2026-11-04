@@ -1,16 +1,16 @@
 {
-  "name": "@fig/complete-oclif",
+  "name": "@tabsmith/complete-oclif",
   "description": "Generate Fig completion spec from oclif",
   "version": "2.0.1",
   "author": "Matt Schrage @mattschrage",
-  "bugs": "https://github.com/withfig/autocomplete-tools/issues",
+  "bugs": "https://github.com/PedroLaRosa/autocomplete-tools/issues",
   "dependencies": {
     "@oclif/core": "^2.16.0",
     "prettier": "^3.3.3"
   },
   "devDependencies": {
     "@types/node": "^22.5.2",
-    "@withfig/autocomplete-types": "workspace:^",
+    "@tabsmith/autocomplete-types": "workspace:^",
     "oclif": "^3.17.2",
     "tslib": "^2.7.0",
     "typescript": "^5.5.4"
@@ -19,8 +19,8 @@
     "/lib",
     "/oclif.manifest.json"
   ],
-  "homepage": "https://github.com/withfig/autocomplete-tools/tree/main/integrations/oclif",
-  "repository": "github:withfig/autocomplete-tools",
+  "homepage": "https://github.com/PedroLaRosa/autocomplete-tools/tree/main/integrations/oclif",
+  "repository": "github:PedroLaRosa/autocomplete-tools",
   "keywords": [
     "oclif-plugin"
   ],
