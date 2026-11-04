@@ -12,7 +12,7 @@
     "noFallthroughCasesInSwitch": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "types": ["@withfig/autocomplete-types", "node"]
+    "types": ["@tabsmith/autocomplete-types", "node"]
   },
   "exclude": ["node_modules", "dist", "test"],
   "include": ["src"],

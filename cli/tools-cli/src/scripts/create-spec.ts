@@ -1,6 +1,6 @@
 import path from "node:path";
 import readline from "node:readline";
-import { createCompletionSpec } from "create-completion-spec";
+import { createCompletionSpec } from "@tabsmith/create-completion-spec";
 import { Command } from "commander";
 import chalk from "chalk";
 

@@ -1,5 +1,5 @@
 {
-  "name": "@fig/autocomplete-shared",
+  "name": "@tabsmith/autocomplete-shared",
   "version": "1.1.2",
   "description": "Internal shared utilities for working with Fig specs",
   "main": "./dist/cjs/index.js",
@@ -25,7 +25,7 @@
     "@tsconfig/recommended": "^1.0.7",
     "@types/node": "^22.5.2",
     "@types/semver": "^7.5.8",
-    "@withfig/autocomplete-types": "workspace:^",
+    "@tabsmith/autocomplete-types": "workspace:^",
     "prettier": "^3.3.3",
     "typescript": "^5.5.4",
     "vitest": "^2.1.4"

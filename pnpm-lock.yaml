@@ -51,7 +51,7 @@ importers:
         specifier: ^1.1.0
         version: 1.1.1
     devDependencies:
-      '@fig/complete-commander':
+      '@tabsmith/complete-commander':
         specifier: workspace:^
         version: link:../../integrations/commander
       '@types/node':
@@ -82,7 +82,7 @@ importers:
         specifier: ^2.4.2
         version: 2.4.2
     devDependencies:
-      '@fig/complete-commander':
+      '@tabsmith/complete-commander':
         specifier: workspace:^
         version: link:../../integrations/commander
       '@types/express':
@@ -121,12 +121,15 @@ importers:
       '@esbuild-plugins/node-modules-polyfill':
         specifier: ^0.2.2
         version: 0.2.2(esbuild@0.24.2)
-      '@fig/autocomplete-helpers':
+      '@tabsmith/autocomplete-helpers':
         specifier: workspace:^
         version: link:../../helpers
-      '@fig/autocomplete-merge':
+      '@tabsmith/autocomplete-merge':
         specifier: workspace:^
         version: link:../../merge
+      '@tabsmith/create-completion-spec':
+        specifier: workspace:^
+        version: link:../create-completion-spec
       '@types/semver':
         specifier: ^7.5.8
         version: 7.5.8
@@ -139,9 +142,6 @@ importers:
       commander:
         specifier: ^13.0.0
         version: 13.0.0
-      create-completion-spec:
-        specifier: workspace:^
-        version: link:../create-completion-spec
       esbuild:
         specifier: ^0.24.2
         version: 0.24.2
@@ -161,30 +161,30 @@ importers:
         specifier: ^5.5.4
         version: 5.7.2
     devDependencies:
-      '@fig/complete-commander':
+      '@tabsmith/autocomplete-types':
+        specifier: workspace:^
+        version: link:../../types
+      '@tabsmith/complete-commander':
         specifier: workspace:^
         version: link:../../integrations/commander
       '@types/node':
         specifier: ^22.5.2
         version: 22.10.2
-      '@withfig/autocomplete-types':
-        specifier: workspace:^
-        version: link:../../types
       tsx:
         specifier: ^4.19.2
         version: 4.19.2
 
   eslint/config-autocomplete:
     dependencies:
+      '@tabsmith/eslint-plugin-fig-linter':
+        specifier: workspace:^
+        version: link:../plugin-fig-linter
       '@typescript-eslint/eslint-plugin':
         specifier: ^7.0.0
         version: 7.18.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.7.2))(eslint@8.57.1)(typescript@5.7.2)
       '@typescript-eslint/parser':
         specifier: ^7.0.0
         version: 7.18.0(eslint@8.57.1)(typescript@5.7.2)
-      '@withfig/eslint-plugin-fig-linter':
-        specifier: workspace:^
-        version: link:../plugin-fig-linter
       eslint:
         specifier: ^8.56.0
         version: 8.57.1
@@ -199,12 +199,12 @@ importers:
 
   generators:
     devDependencies:
+      '@tabsmith/autocomplete-types':
+        specifier: workspace:^
+        version: link:../types
       '@types/node':
         specifier: ^22.5.2
         version: 22.10.2
-      '@withfig/autocomplete-types':
-        specifier: workspace:^
-        version: link:../types
       tsx:
         specifier: ^4.19.2
         version: 4.19.2
@@ -221,6 +221,9 @@ importers:
         specifier: ^7.6.3
         version: 7.6.3
     devDependencies:
+      '@tabsmith/autocomplete-types':
+        specifier: workspace:^
+        version: link:../types
       '@tsconfig/recommended':
         specifier: ^1.0.7
         version: 1.0.8
@@ -230,9 +233,6 @@ importers:
       '@types/semver':
         specifier: ^7.5.8
         version: 7.5.8
-      '@withfig/autocomplete-types':
-        specifier: workspace:^
-        version: link:../types
       prettier:
         specifier: ^3.3.3
         version: 3.3.3
@@ -255,12 +255,12 @@ importers:
         specifier: ^18.3.1
         version: 18.3.1
     devDependencies:
+      '@tabsmith/autocomplete-types':
+        specifier: workspace:^
+        version: link:../types
       '@types/react':
         specifier: ^18.3.5
         version: 18.3.18
-      '@withfig/autocomplete-types':
-        specifier: workspace:^
-        version: link:../types
       typescript:
         specifier: ^5.5.4
         version: 5.7.2
@@ -271,12 +271,12 @@ importers:
         specifier: ^3.3.3
         version: 3.3.3
     devDependencies:
+      '@tabsmith/autocomplete-types':
+        specifier: workspace:^
+        version: link:../../types
       '@types/node':
         specifier: ^22.5.2
         version: 22.10.2
-      '@withfig/autocomplete-types':
-        specifier: workspace:^
-        version: link:../../types
       chalk:
         specifier: ^5.3.0
         version: 5.4.0
@@ -299,12 +299,12 @@ importers:
         specifier: ^3.3.3
         version: 3.3.3
     devDependencies:
+      '@tabsmith/autocomplete-types':
+        specifier: workspace:^
+        version: link:../../types
       '@types/node':
         specifier: ^22.5.2
         version: 22.10.2
-      '@withfig/autocomplete-types':
-        specifier: workspace:^
-        version: link:../../types
       oclif:
         specifier: ^3.17.2
         version: 3.17.2(@types/node@22.10.2)(encoding@0.1.13)(mem-fs@2.3.0)(typescript@5.7.2)
@@ -327,21 +327,24 @@ importers:
         specifier: ^5.5.4
         version: 5.7.2
     devDependencies:
+      '@tabsmith/autocomplete-types':
+        specifier: workspace:^
+        version: link:../types
       '@tsconfig/recommended':
         specifier: ^1.0.7
         version: 1.0.8
       '@types/node':
         specifier: ^22.5.2
         version: 22.10.2
-      '@withfig/autocomplete-types':
-        specifier: workspace:^
-        version: link:../types
       tsx:
         specifier: ^4.19.2
         version: 4.19.2
 
   shared:
     devDependencies:
+      '@tabsmith/autocomplete-types':
+        specifier: workspace:^
+        version: link:../types
       '@tsconfig/recommended':
         specifier: ^1.0.7
         version: 1.0.8
@@ -351,9 +354,6 @@ importers:
       '@types/semver':
         specifier: ^7.5.8
         version: 7.5.8
-      '@withfig/autocomplete-types':
-        specifier: workspace:^
-        version: link:../types
       prettier:
         specifier: ^3.3.3
         version: 3.3.3

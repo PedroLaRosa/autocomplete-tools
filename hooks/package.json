@@ -1,5 +1,5 @@
 {
-  "name": "@fig/autocomplete-hooks",
+  "name": "@tabsmith/autocomplete-hooks",
   "description": "Hooks for building autocomplete components",
   "version": "1.0.2",
   "author": "The Fig Team",
@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "@types/react": "^18.3.5",
-    "@withfig/autocomplete-types": "workspace:^",
+    "@tabsmith/autocomplete-types": "workspace:^",
     "typescript": "^5.5.4"
   },
   "publishConfig": {

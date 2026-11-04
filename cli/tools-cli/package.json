@@ -1,5 +1,5 @@
 {
-  "name": "@withfig/autocomplete-tools",
+  "name": "@tabsmith/autocomplete-tools",
   "version": "2.11.0",
   "description": "Command line tools for working with fig autocomplete specs",
   "author": "The Fig Team",
@@ -22,13 +22,13 @@
   ],
   "dependencies": {
     "@esbuild-plugins/node-modules-polyfill": "^0.2.2",
-    "@fig/autocomplete-helpers": "workspace:^",
-    "@fig/autocomplete-merge": "workspace:^",
+    "@tabsmith/autocomplete-helpers": "workspace:^",
+    "@tabsmith/autocomplete-merge": "workspace:^",
     "@types/semver": "^7.5.8",
     "chalk": "^5.4.1",
     "chokidar": "^4.0.1",
     "commander": "^13.0.0",
-    "create-completion-spec": "workspace:^",
+    "@tabsmith/create-completion-spec": "workspace:^",
     "esbuild": "^0.24.2",
     "fast-glob": "^3.3.2",
     "module-from-string": "^3.3.1",
@@ -37,9 +37,9 @@
     "typescript": "^5.5.4"
   },
   "devDependencies": {
-    "@fig/complete-commander": "workspace:^",
+    "@tabsmith/complete-commander": "workspace:^",
     "@types/node": "^22.5.2",
-    "@withfig/autocomplete-types": "workspace:^",
+    "@tabsmith/autocomplete-types": "workspace:^",
     "tsx": "^4.19.2"
   },
   "fig": {

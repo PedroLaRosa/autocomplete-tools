@@ -10,7 +10,7 @@ import version from "./scripts/version";
 const program = new Command();
 
 program
-  .name("@withfig/autocomplete-tools")
+  .name("@tabsmith/autocomplete-tools")
   .description("Dev tools for fig's autocomplete")
   .version("1.0.0");
 program.addCommand(init);

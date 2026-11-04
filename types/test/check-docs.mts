@@ -17,7 +17,7 @@ const expectedDocs = await prettier.format(JSON.stringify(generate(analyze(docsP
 if (currentDocs !== expectedDocs) {
   console.error(
     pc.red(
-      "Current docs from @withfig/autocomplete-types are different from the expected ones, please run 'yarn workspace @withfig/autocomplete-types generate-docs' to regenerate them."
+      "Current docs from @tabsmith/autocomplete-types are different from the expected ones, please run 'yarn workspace @tabsmith/autocomplete-types generate-docs' to regenerate them."
     )
   );
   process.exit(1);
