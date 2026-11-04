@@ -25,7 +25,7 @@
     "@tabsmith/autocomplete-helpers": "workspace:^",
     "@tabsmith/autocomplete-merge": "workspace:^",
     "@types/semver": "^7.5.8",
-    "chalk": "^5.4.1",
+    "chalk": "^6.0.1",
     "chokidar": "^4.0.1",
     "commander": "^13.0.0",
     "@tabsmith/create-completion-spec": "workspace:^",
