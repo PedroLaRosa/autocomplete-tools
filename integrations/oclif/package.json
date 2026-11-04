@@ -11,7 +11,7 @@
   "devDependencies": {
     "@types/node": "^22.5.2",
     "@tabsmith/autocomplete-types": "workspace:^",
-    "oclif": "^3.17.2",
+    "oclif": "^6.0.15",
     "tslib": "^2.7.0",
     "typescript": "^5.5.4"
   },
