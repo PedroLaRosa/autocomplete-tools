@@ -19,7 +19,7 @@
   "devDependencies": {
     "@types/react": "^18.3.5",
     "@tabsmith/autocomplete-types": "workspace:^",
-    "typescript": "^5.5.4"
+    "typescript": "^7.0.2"
   },
   "publishConfig": {
     "access": "public"
