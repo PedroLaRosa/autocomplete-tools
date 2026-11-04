@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@tabsmith/complete-commander": "workspace:^",
-    "@types/node": "^22.5.2",
+    "@types/node": "^26.6.6",
     "tsx": "^4.19.2",
     "typescript": "^5.5.4"
   },
