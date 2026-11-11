@@ -28,7 +28,7 @@
     "@tabsmith/autocomplete-types": "workspace:^",
     "prettier": "^3.3.3",
     "typescript": "^5.5.4",
-    "vitest": "^2.1.4"
+    "vitest": "^5.1.0"
   },
   "publishConfig": {
     "access": "public"
