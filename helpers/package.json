@@ -15,12 +15,12 @@
   },
   "author": "Fig Team",
   "dependencies": {
-    "semver": "^7.6.3"
+    "semver": "^7.8.6"
   },
   "devDependencies": {
     "@tsconfig/recommended": "^1.0.7",
     "@types/node": "^22.5.2",
-    "@types/semver": "^7.5.8",
+    "@types/semver": "^7.8.0",
     "@tabsmith/autocomplete-types": "workspace:^",
     "prettier": "^3.3.3",
     "tsx": "^4.19.2",
